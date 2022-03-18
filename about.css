@@ -1,0 +1,119 @@
+
+/**************************************************** */
+/****** About Landing Block */
+
+.about-landing {
+    position: relative;
+    background-image: linear-gradient(
+        120deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 65%), url(images/rope\ training.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 60%;
+    height: 40vh;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 10px solid lightblue;
+}
+
+.about-landing-container {
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    margin-bottom: 5rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/**************************************************** */
+/****** Trainers Section */
+
+.trainers-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.trainer-section-text {
+    width: 60%;
+    margin: 3rem 0rem 5rem;
+}
+
+.trainers-section h2 {
+    margin-bottom: 1rem;
+}
+
+.trainers-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.trainer {
+    width: 40%;
+    border: 2px solid black;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+
+.trainer h3 {
+    margin: 2rem 0rem;
+}
+
+.trainer-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainer-image img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.trainer-text {
+    width: 80%;
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 850px) {
+    .trainers-container p {
+        width: 80%;
+    }
+    .trainer {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .trainers-container {
+        width: 100%;
+    }
+
+    .trainer-image img {
+        width: 12rem;
+        height: 12rem;
+    }
+}

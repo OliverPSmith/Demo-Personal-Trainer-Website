@@ -1,0 +1,196 @@
+
+/**************************************************** */
+/****** Contact Landing Block */
+
+.contact-landing {
+    position: relative;
+    background-image: linear-gradient(
+        360deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 65%), url(images/women\ weight\ class.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70% 30%;
+    height: 40vh;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 10px solid lightblue;
+}
+
+.contact-landing-container {
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    margin-bottom: 5rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/**************************************************** */
+/****** Contact */
+
+
+.contact-form-section {
+    transform: skewY(0deg);
+    border-top: 5px solid lightblue;
+    
+}
+
+.contact-container {
+    transform: skewY(0deg);
+    padding: 6rem 4rem 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container p {
+    width: 40%;
+    margin: 2rem 0rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    margin-top: 2rem;
+    border: 2px solid black;
+    border-top: none;
+}
+
+form {
+  /*  width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    */
+    padding: 30px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+input {
+    height: 2rem;
+}
+
+input, textarea {
+    width: 100%;
+  /*  border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none; */
+    border: none;
+    padding: 20px;
+    margin: 10px;
+}
+
+input, textarea:focus {
+    outline: none;
+}
+
+.contact-hover{
+    font-size: 1.2rem;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: var(--main-text-color);
+    text-shadow: 1px 1px 1px black;
+    position: relative;
+    width: 100%;
+}
+.contact-hover:hover {
+    color: var(--heading-text-color);
+    text-shadow: none;
+    transition: .4s;
+}
+
+.contact-hover::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    left: 50%;
+    bottom: 1px;
+    transition: all .2s ease-in-out;
+}
+.contact-hover:hover::after{
+    width: 90%;
+    left: 5%;
+}
+
+.send-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#send-button {
+    font-size: 1.4rem;
+    padding: 5px;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .4s ease-out;
+    border: none;
+}
+
+#send-button:hover{
+    background-position: left bottom;
+    border: 1px solid white;
+}
+
+#send-button a {
+    color: var(--heading-text-color);
+    text-decoration: none;
+}
+#send-button:hover a {
+    color: var(--main-text-color);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+    .contact-container {
+        padding: 6rem 2rem 7rem;
+    }
+    .contact-container p {
+        width: 80%;
+    }
+    .form-container {
+        width: 100%;
+        padding: 4px;
+    }
+    form {
+        padding: 4px;
+    }
+}
+
+
+.contact-page-footer {
+    height: 65vh;
+    background-image: linear-gradient(
+        180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 65%), url(images/weights\ spud.jpg);
+    background-position: 65% 35%;
+
+
+    border-top: 10px solid lightblue;
+}
