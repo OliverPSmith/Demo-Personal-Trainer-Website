@@ -356,7 +356,7 @@ header {
 .phase {
     border: 2px solid black;
     width: 20rem;
-    height: 15rem;
+    height: 17rem;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -385,8 +385,11 @@ header {
 
 .phase-text {
     margin-top: 1rem;
+    margin-bottom: 2rem;
     padding: 10px;
 }
+
+
 
 
 @media only screen and (max-width: 650px) {
